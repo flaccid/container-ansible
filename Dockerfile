@@ -3,4 +3,4 @@ RUN apt-get update && \
     apt-get -y install ansible && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
