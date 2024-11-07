@@ -1,3 +1,7 @@
+testHostContainer:
+  enabled: false
+  image: flaccid/sshd
+
 volumes: {}
 volumeMounts: {}
 

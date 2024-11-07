@@ -1,3 +1,5 @@
+testHostContainer:
+  enabled: true
 volumes:
   - name: config-ansible-hosts
     configMap:

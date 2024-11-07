@@ -41,6 +41,15 @@ spec:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+        {{- if .Values.testHostContainer.enabled }}
+        - name: test-host
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: {{ .Values.testHostContainer.image }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          stdin: true
+          tty: true
+        {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
