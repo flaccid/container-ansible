@@ -16,7 +16,8 @@ kind: ConfigMap
 data:
   hosts: |
     ubuntu_workspaces:
-      u-1c6uucjay64tr.foobar.local:
+      hosts:
+        u-1c6uucjay64tr.foobar.local:
 metadata:
   name: ansible-hosts
   namespace: default
@@ -40,4 +41,16 @@ data:
 metadata:
   name: ansible-playbook
   namespace: default
+```
+
+### Ansible Cheat Sheet
+
+Output all hosts info, works as inventory script:
+```
+ansible-inventory --list
+```
+
+Run the playbook:
+```
+ansible-playbook /etc/ansible/playbook.yaml
 ```
