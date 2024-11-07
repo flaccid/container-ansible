@@ -1,0 +1,14 @@
+volumes:
+  - name: config-ansible-hosts
+    configMap:
+      name: ansible-hosts
+  - name: config-ansible-playbook
+    configMap:
+      name: ansible-playbook
+volumeMounts:
+  - name: config-ansible-hosts
+    mountPath: /etc/ansible/hosts
+    subPath: hosts
+  - name: config-ansible-playbook
+    mountPath: /etc/ansible/playbook.yaml
+    subPath: playbook.yaml
