@@ -3,12 +3,12 @@ entries:
   ansible:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-11-07T18:40:10.427352007+11:00"
+    created: "2024-11-07T19:05:52.86587679+11:00"
     description: A Helm chart for Kubernetes
-    digest: 2762bf21676da20e36240e4c63ae12c0cc81f2d2be62235bf963bb66f45830b4
+    digest: 4beaa03e087c746330d975bc65509906b15a0ec51e6c1446934af743fce1de18
     name: ansible
     type: application
     urls:
     - https://flaccid.github.io/container-ansible/ansible-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-07T18:40:10.421718944+11:00"
+generated: "2024-11-07T19:05:52.862596155+11:00"
