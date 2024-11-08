@@ -3,6 +3,7 @@ testHostContainer:
   image: flaccid/sshd
   env: []
   securityContext: {}
+  lifecycle: {}
 
 initContainers: []
 volumes: {}

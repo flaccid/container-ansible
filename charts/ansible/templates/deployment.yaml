@@ -49,6 +49,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             {{- toYaml .Values.testHostContainer.env | nindent 12 }}
+          lifecycle:
+            {{- toYaml .Values.testHostContainer.lifecycle | nindent 12 }}
           stdin: true
           tty: true
         {{- end }}
