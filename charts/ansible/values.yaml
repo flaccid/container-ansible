@@ -3,6 +3,7 @@ testHostContainer:
   image: flaccid/sshd
   env: []
 
+initContainers: []
 volumes: {}
 volumeMounts: {}
 

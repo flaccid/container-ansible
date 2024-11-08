@@ -52,6 +52,8 @@ spec:
           stdin: true
           tty: true
         {{- end }}
+      initContainers:
+        {{- toYaml .Values.initContainers | nindent 8 }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
