@@ -37,6 +37,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           stdin: true
           tty: true
+          lifecycle:
+            {{- toYaml .Values.lifecycle | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
           resources:

@@ -6,6 +6,7 @@ testHostContainer:
   lifecycle: {}
 
 initContainers: []
+lifecycle: {}
 volumes: {}
 volumeMounts: {}
 
