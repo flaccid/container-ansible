@@ -44,7 +44,7 @@ spec:
         {{- if .Values.testHostContainer.enabled }}
         - name: test-host
           securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
+            {{- toYaml .Values.testHostContainer.securityContext | nindent 12 }}
           image: {{ .Values.testHostContainer.image }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:

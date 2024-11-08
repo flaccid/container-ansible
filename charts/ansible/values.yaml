@@ -2,6 +2,7 @@ testHostContainer:
   enabled: false
   image: flaccid/sshd
   env: []
+  securityContext: {}
 
 initContainers: []
 volumes: {}
